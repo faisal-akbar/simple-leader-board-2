@@ -9,3 +9,4 @@ A dummy leader board website.
 ### Technology
 
 - Bootstrap
+- JavaScript
