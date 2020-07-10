@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leader Board</title>
+  <meta name="description" content="Simple Leader Board Website" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<!-- When Loading onload="myFunction()" style="margin:0;" -->
+
+<body onload="myFunction()" style="margin:0;">
+
+  <!-- Loader Start -->
+  <div id="pre-container">
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>
+  </div>
+
+  <!-- When loader start display set to none, this div is only for loading purpose -->
+  <div id="myDiv" class="loader d-none">
+
+    <!-- Main body started -->
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark primary-highlight">
+        <div class="container px-0">
+          <a class="navbar-brand" href="#"><img src="assets/icon/logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- use ml-auto for move the nav-item to right -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active pt-2">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="assets/profile/profile-1.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Top Player -->
+
+    <main class="mx-auto mt-4">
+      <section class="container-fluid bg-white pb-3 pt-2 rounded">
+        <h3 class="pt-3 primary-highlight">Top Player</h3>
+        <!-- .row*2>.col-md-4.player*3>img+p{player-$} -->
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-6 player p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-1.png" alt="" />
+            <p class="pl-3">John Smith</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-2.png" alt="" />
+            <p class="pl-3">Pro Rasel</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-3.png" alt="" />
+            <p class="pl-3">Abu Sufian</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-4.png" alt="" />
+            <p class="pl-3">Shajedul Karim</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-5.png" alt="" />
+            <p class="pl-3">Maruf Ahmed</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-6.png" alt="" />
+            <p class="pl-3">Mujahid</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Top Blog -->
+
+        <h3 class="primary-highlight">Top Blog</h3>
+        <div class="row">
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-1.png" alt="" />
+            <div class="pl-3">
+              <h5>13 of My Favorite UI/UX Goodies</h5>
+              <small>By <span class="primary-highlight">Danny Sapio</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-2.png" alt="" />
+            <div class="pl-3">
+              <h5>UI cheat sheet: list vs grids</h5>
+              <small>By <span class="primary-highlight">Tess Gadd</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-3.png" alt="" />
+
+            <div class="pl-3">
+              <h5>7 typography tips for interface design</h5>
+              <small>By <span class="primary-highlight">Jeremiah Lam</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-4.png" alt="" />
+
+            <div class="pl-3">
+              <h5>Your logo is copied</h5>
+              <small>By
+                <span class="primary-highlight">Ferdinand Vogler</span></small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Top Courses -->
+    <section id="courses" class="sub-section container-fluid bg-white mt-3 pt-3 pb-4 mx-auto rounded">
+      <h3 class="pb-3 mt-2 primary-highlight">Top Courses</h3>
+      <div class="card-deck">
+        <div class="row px-3">
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-1.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">React - The Complete Guide</h5>
+                <small><span class="text-danger">Reed Krakoff</span></small>
+              </div>
+
+
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p><i class="fas fa-clock"></i> 1:30hr</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-2.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">Powerpoint 2020 Course</h5>
+                <small><span class="text-danger">Walter Scott</span></small>
+              </div>
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p>
+                    <span><i class="fas fa-clock"></i> 1:30hr</span>
+                  </p>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-3.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">The Complete JavaScript</h5>
+                <small><span class="text-danger">Course 2020</span></small>
+              </div>
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p><i class="fas fa-clock"></i> 1:30hr</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main body End -->
+
+
+    <!-- Loader div end -->
+  </div>
+
+
+  <!-- Loader JS Start -->
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 5000);
+    }
+
+    function showPage() {
+      document.getElementById("pre-container").style.display = "none";
+      document.getElementById("myDiv").className = "d-block";
+    }
+  </script>
+
+  <!-- Loader JS End -->
+
+
+
+  <!-- Bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
