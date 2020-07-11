@@ -108,7 +108,7 @@ html {
 
 #pre-container {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   background: #562EFF;
   display: flex;
   align-items: center;
@@ -345,5 +345,41 @@ html {
 
   100% {
     transform: scale(1, 1);
+  }
+}
+
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .pre-container {
+    height: auto;
+  }
+
+
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pre-container {
+    height: auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pre-container {
+    height: auto;
+  }
+
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pre-container {
+    height: auto;
   }
 }
